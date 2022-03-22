@@ -1,16 +1,16 @@
 {
-  "user-1": {
-    "username": "testuser@iptiq.com",
-    "pwd": "test1234"
-  },
-
-  "user-2": {
-    "username": "firstname.lastname@domain.com",
-    "pwd": "Heslo12345"
-  },
-
-  "user-3": {
-    "username": "email@subdomain.domain.com",
-    "pwd": "Heslo54321"
-  }
+  "users": [
+    {
+      "username": "testuser@iptiq.com",
+      "pwd": "test1234"
+    },
+    {
+      "username": "firstname.lastname@domain.com",
+      "pwd": "Heslo12345"
+    },
+    {
+      "username": "email@subdomain.domain.com",
+      "pwd": "Heslo54321"
+    }
+  ]
 }
