@@ -1,2 +1,2 @@
-# test toolkit 
-Cypress based test  maintained by Adam Juraj Tomasov 
+# tests 
+Cypress based test maintained by Adam Juraj Tomasov 
