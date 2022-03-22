@@ -14,4 +14,5 @@ describe("Login test", () => {
             cy.get('a.nav-link').should('contains.text', element.username);
         });
     });
+
 });
