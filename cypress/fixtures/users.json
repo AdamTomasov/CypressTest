@@ -1,15 +1,15 @@
 {
   "users": [
     {
-      "username": "testuser@iptiq.com",
+      "email": "testuser@iptiq.com",
       "pwd": "test1234"
     },
     {
-      "username": "firstname.lastname@domain.com",
+      "email": "firstname.lastname@domain.com",
       "pwd": "Heslo12345"
     },
     {
-      "username": "email@subdomain.domain.com",
+      "email": "email@subdomain.domain.com",
       "pwd": "Heslo54321"
     }
   ]

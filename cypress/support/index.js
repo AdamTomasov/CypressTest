@@ -18,7 +18,7 @@ import './commands'
 
 // type definitions for custom commands like "createDefaultTodos" and chai
 /// <reference types="../support" />
-/// <reference types="chai" />
+
 
 
 // Alternatively you can use CommonJS syntax:
