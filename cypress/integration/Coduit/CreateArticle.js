@@ -3,6 +3,9 @@ import userData from '../../fixtures/users.json'
 import articleData from '../../fixtures/article.json'
 
 const articlePage = new ArticlePage();
+const uuid = () => Cypress._.random(0, 1e2)
+const id = uuid()
+const testname = `testname${id}`
 
 describe(`Create and Publish Article Test`, () => {
 
@@ -17,17 +20,18 @@ describe(`Create and Publish Article Test`, () => {
             cy.wait('@tags').then(() => {
                 cy.get('.container .nav :nth-child(2) .nav-link').eq(0).click();
                 cy.wait('@tags').then(() => {
-                    articlePage.getTitleInput().type(element.title);
+                    articlePage.getTitleInput().type(element.title + testname);
                     articlePage.getAboutInput().type(element.about);
                     articlePage.getTextArea().type(element.text);
                     articlePage.getTagInput().type(element.tag);
                     articlePage.getPublishButton().click();
 
-                    cy.get('h1').should('contain.text',element.title);
+                    cy.get('h1').should('contain.text', element.title);
                     cy.get('.author').should('contain.text', userData.users[0].email);
+                    cy.get('body').should('be.visible');
                     articlePage.getDeleteButton().click();
                 })
             })
         })
-    });
-})
+    })
+});
