@@ -8,7 +8,6 @@ describe(`Create and Publish Article Test`, () => {
 
     beforeEach('Log in user', () => {
         cy.intercept('GET', '/api/tags').as('tags');
-        //cy.intercept('POST', 'api/articles').as(;)
         cy.visit('https://react-redux.realworld.io/#/login?_k=z8eifk');
         cy.SignIn(userData.users[0].email, userData.users[0].pwd);
     })
