@@ -13,7 +13,7 @@ describe(`Create and Publish Article Test`, () => {
         it(`Succes logout: ` + element.email, () => {
             cy.SignIn(element.email, element.pwd);
             cy.wait('@tags').then(() => {
-               settingsPage.getSettingsButton().click();
+                settingsPage.getSettingsButton().click();
                 settingsPage.getLogoutButton().click();
             })
         })
